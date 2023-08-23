@@ -220,8 +220,7 @@ h1 {
 }
 
 .navbar_displacer {
-    height: 9vh;
-    display: none;
+    height: 9vh;   
 }
 
 .active_button {
@@ -296,12 +295,11 @@ h1 {
 }
 
 .active {
-    /*color: #fffb07;*/
+    color: #fffb07 !important;
     text-decoration: none;
     font-family: museo-sans;
     font-weight: 500;
     font-size: 15px; 
-
 }
 
 
