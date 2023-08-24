@@ -265,7 +265,8 @@ h1 {
     position: fixed;
     top: 0;
     width: 100%;    
-    background-color: #111013;    
+    background-color: #111013;
+    z-index: 1;    
 }
 
 .container-fluid {
@@ -281,8 +282,14 @@ h1 {
     font-size: 20px;     
 }
 
+.navbar-toggler {
+    background-color: #F5EFE0;
+    border-radius: 0px;
+}
+
 .navbar-toggler-icon {
     opacity: 1;
+    
 }
 
 
@@ -338,6 +345,7 @@ h1 {
     font-weight: 300;
     text-align: center;
     font-size: 15px;
+    margin-top: 15px;
 }
 
 .page_vertical_line {
@@ -355,8 +363,8 @@ h1 {
     background-color: #9e998d;
     height: 3px;
     width: 100%;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-bottom: 15px;    
 }
 
 .wide_logo {
@@ -524,11 +532,10 @@ background-color: #fffb07
     height: 100%;
     width: 4px;
     margin-right: 25px;
-    margin-left: 25px;
+    margin-left: 25px;    
 }
 
 .index_slice_side_a {
-
     height: 100%;
     width: 40%;
     display: flex;
@@ -567,7 +574,8 @@ background-color: #fffb07
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 9vh;    
+    height: 9vh;
+    z-index: 1;    
 }
 
 .navbar_displacer {
@@ -643,15 +651,16 @@ font-size: 20px;
     font-weight: 300;
     text-align: center;
     font-size: 2vw;
+    margin: 10px;
 }
 
 .page_vertical_line {   
-border: none;
-background-color: #9e998d;
-height: 100%;
-width: 3px;
-margin-right: 25px;
-margin-left: 25px;
+    border: none;
+    background-color: #9e998d;
+    height: 100%;
+    width: 3px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .page_horizonal_line {
@@ -877,7 +886,8 @@ margin-left: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 9vh;    
+    height: 9vh;
+    z-index: 1;    
 }
 
 .navbar_displacer {
@@ -953,6 +963,7 @@ margin-left: 25px;
     font-weight: 300;
     text-align: center;
     font-size: 2vw;
+    margin-top: 10px;
 }
 
 .page_vertical_line {   
