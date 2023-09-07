@@ -1,0 +1,45 @@
+.branding_title {
+    color: $dark;
+    text-decoration: none;
+    font-family: museo-sans;
+    font-weight: 700;
+    @media all and (max-width:415px) {
+        font-size: 25px;
+        margin-top: 10vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    @media all and (min-width:416px) and (max-width:768px){
+        font-size: 25px;
+        margin-top: 10vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        text-align: center;
+    }
+    @media all and (min-width:769px) {
+        font-size: 3vw;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        text-align: center;
+    }    
+    
+}
+
+.branding_container {    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;      
+}
+
+.branding_image {
+    width: 80vw;    
+    @media all and (max-width:415px) {
+        margin-top: 10vw;
+    }
+    @media all and (min-width:416px) and (max-width:768px){
+        margin-top: 10vw;
+    }
+    @media all and (min-width:769px) {
+        margin-bottom: 5vh;  
+    }    
+}

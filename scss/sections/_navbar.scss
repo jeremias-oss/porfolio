@@ -1,0 +1,126 @@
+.navbar_displacer {
+    @media all and (max-width:415px){
+    height: 9vh;
+    }
+    @media all and (min-width:416px) and (max-width:768px){
+    height: 9vh;
+    }
+    @media all and (min-width:769px){  
+    height: 18vh;
+    }
+}
+
+//navbar small
+
+.navbar_small {
+    font-family: museo-sans;
+    background-color: $dark;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    @media all and (min-width:415px) {
+        display: none;
+    }
+
+    .container-fluid {
+        background-color: $dark;
+        padding-left: 15px;        
+
+        .navbar-brand {            
+            color: $light;
+            font-weight: 600;
+            font-size: 20px;     
+        }
+
+        .navbar-toggler {
+            background-color: $light;
+            border-radius: 0px;
+        }
+
+        .navbar-toggler-icon {
+            opacity: 1;            
+        }
+
+        .nav-link {
+            color: $light;
+            text-decoration: none;            
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .active {
+            color: $highlight !important;
+            text-decoration: none;            
+            font-weight: 500;
+            font-size: 15px; 
+        }
+    }
+}
+
+//navbar large
+
+.navbar_general {    
+    @media all and (max-width:415px){
+        display: none;
+        }      
+    position: fixed;
+    width: 100%;    
+    top: 0;
+    background-color: $dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    font-family: museo-sans;
+    @media all and (min-width:416px) and (max-width:768px){
+        height: 9vh;
+    }
+    @media all and (min-width:769px){
+        height: 13vh;
+    }
+        
+    .active_button {
+        color: $highlight;
+        text-decoration: none;        
+        font-weight: 500;        
+        @media all and (min-width:416px) and (max-width:768px){
+            font-size: 20px;
+        }
+        @media all and (min-width:769px){
+            font-size: 25px;
+        }
+    }
+
+    .text_navbar {
+        color: $light;
+        text-decoration: none;        
+        font-weight: 500;
+        @media all and (min-width:416px) and (max-width:768px){
+            font-size: 20px;
+        }
+        @media all and (min-width:769px){
+            font-size: 25px;
+        }
+    }
+    
+
+    .line_animation_navbar {
+        border: none;
+        background-color: $light;
+        height: 1px;
+        width: 100%;
+        animation: 400ms linear line_move;
+        opacity: 1;        
+        }
+    
+        @keyframes line_move {
+            from {
+                width: 0%;  
+            }
+            to {
+                width: 100%;  
+            }
+    }
+    
+}

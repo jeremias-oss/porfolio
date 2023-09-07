@@ -1,0 +1,107 @@
+//small cv
+
+.small_page_slice_cv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 15px;
+    font-family: museo-sans;
+    text-decoration: none;   
+    color: $dark;
+    @media all and (min-width:415px){
+        display: none;
+    }    
+
+    .cv_h1 {    
+        font-weight: 900;
+        font-size: 10vw;
+        margin-top: 1rem;
+    }
+    .cv_h2 {      
+        font-weight: 900;
+        font-size: 5vw;
+        margin-top: 0.5rem;
+    }
+
+    .cv_p {   
+        font-weight: 500;
+        font-size: 5vw;
+        margin-top: 1px;
+    }
+
+    .cv_horizontal_line {   
+        border: none;
+        background-color: $dark;
+        height: 2px;
+        width: 100%;
+        margin-top: 2px;
+        margin-bottom: 6px;
+        opacity: 1;   
+    }
+}
+
+//large cv
+
+.large_page_slice_cv {
+    display: flex;
+    flex-direction: column;   
+    color: $dark;
+    font-family: museo-sans;
+    @media all and (max-width:415px){
+        display: none;
+    }
+    @media all and (min-width:416px) and (max-width:768px){
+        margin-top: 50px;
+        padding: 20px;
+    }
+    @media all and (min-width:769px){
+        margin-top: 100px;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .cv_h1_large {        
+        text-decoration: none;        
+        @media all and (min-width:416px) and (max-width:768px){
+            font-weight: 900;
+            font-size: 4rem;
+            margin-top: 1rem;
+        }
+        @media all and (min-width:769px){
+            font-weight: 900;
+            font-size: 4rem;
+            margin-top: 1rem;
+        }
+    }
+    
+    .cv_h2_large {        
+        text-decoration: none;        
+        @media all and (min-width:416px) and (max-width:768px){
+            font-weight: 900;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+        }
+        @media all and (min-width:769px){
+            font-weight: 900;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .cv_p_large {        
+        text-decoration: none;        
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 1px;
+    }
+
+    .cv_horizontal_line_large {   
+        border: none;
+        background-color: $dark;
+        height: 2px;
+        width: 100%;
+        margin-top: 2px;
+        margin-bottom: 6px;
+        opacity: 1;   
+    }
+}
