@@ -1,12 +1,12 @@
 .navbar_displacer {
     @media all and (max-width:415px){
-    height: 9vh;
+    height: 12vh;
     }
     @media all and (min-width:416px) and (max-width:768px){
-    height: 9vh;
+    height: 14vh;
     }
     @media all and (min-width:769px){  
-    height: 18vh;
+    height: 20vh;
     }
 }
 

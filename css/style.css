@@ -259,17 +259,17 @@ h1 {
 
 @media all and (max-width: 415px) {
   .navbar_displacer {
-    height: 9vh;
+    height: 12vh;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .navbar_displacer {
-    height: 9vh;
+    height: 14vh;
   }
 }
 @media all and (min-width: 769px) {
   .navbar_displacer {
-    height: 18vh;
+    height: 20vh;
   }
 }
 
@@ -393,23 +393,26 @@ h1 {
   text-decoration: none;
   font-family: museo-sans;
   font-weight: 700;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 @media all and (max-width: 415px) {
   .illustration_title {
     font-size: 25px;
+    margin-bottom: 3vh;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .illustration_title {
     font-size: 25px;
+    margin-bottom: 5vh;
   }
 }
 @media all and (min-width: 769px) {
   .illustration_title {
     font-size: 3vw;
+    margin-bottom: 6vh;
   }
 }
 
@@ -425,13 +428,13 @@ h1 {
 @media all and (max-width: 415px) {
   .illustration_image {
     width: 80vw;
-    margin-top: 10vw;
+    margin-bottom: 10vw;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .illustration_image {
     width: 80vw;
-    margin-top: 10vw;
+    margin-bottom: 10vw;
   }
 }
 @media all and (min-width: 769px) {
@@ -459,7 +462,6 @@ h1 {
 .small_page_slice_cv {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
   padding: 15px;
   font-family: museo-sans;
   text-decoration: none;
@@ -473,7 +475,6 @@ h1 {
 .small_page_slice_cv .cv_h1 {
   font-weight: 900;
   font-size: 10vw;
-  margin-top: 1rem;
 }
 .small_page_slice_cv .cv_h2 {
   font-weight: 900;
@@ -508,13 +509,11 @@ h1 {
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .large_page_slice_cv {
-    margin-top: 50px;
     padding: 20px;
   }
 }
 @media all and (min-width: 769px) {
   .large_page_slice_cv {
-    margin-top: 100px;
     padding-left: 300px;
     padding-right: 300px;
   }
@@ -526,14 +525,12 @@ h1 {
   .large_page_slice_cv .cv_h1_large {
     font-weight: 900;
     font-size: 4rem;
-    margin-top: 1rem;
   }
 }
 @media all and (min-width: 769px) {
   .large_page_slice_cv .cv_h1_large {
     font-weight: 900;
     font-size: 4rem;
-    margin-top: 1rem;
   }
 }
 .large_page_slice_cv .cv_h2_large {
@@ -571,23 +568,25 @@ h1 {
 
 .page_slice {
   display: flex;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 @media all and (max-width: 415px) {
   .page_slice {
     flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .page_slice {
-    height: 30vh;
+    align-items: center;
+    margin-bottom: 30px;
   }
 }
 @media all and (min-width: 769px) {
   .page_slice {
-    height: 70vh;
+    align-items: center;
+    margin-bottom: 50px;
   }
 }
 .page_slice .page_slice_side_a {
@@ -616,7 +615,6 @@ h1 {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 @media all and (max-width: 415px) {
   .page_slice .page_slice_side_b {
@@ -658,18 +656,50 @@ h1 {
     margin-top: 10px;
   }
 }
+.page_slice .logo_explain_text {
+  font-family: museo-sans;
+  font-weight: 500;
+  color: #111013;
+}
+@media all and (max-width: 415px) {
+  .page_slice .logo_explain_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  .page_slice .logo_explain_text {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+@media all and (min-width: 769px) {
+  .page_slice .logo_explain_text {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
 .page_slice .page_vertical_line {
   border: none;
   background-color: #111013;
-  height: 100%;
   width: 3px;
   margin-right: 25px;
   margin-left: 25px;
-  opacity: 0, 4;
+  opacity: 1;
 }
 @media all and (max-width: 415px) {
   .page_slice .page_vertical_line {
     display: none;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  .page_slice .page_vertical_line {
+    height: 250px;
+  }
+}
+@media all and (min-width: 769px) {
+  .page_slice .page_vertical_line {
+    height: 300px;
   }
 }
 .page_slice .page_horizonal_line {
@@ -679,7 +709,7 @@ h1 {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 15px;
-  opacity: 0, 4;
+  opacity: 1;
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .page_slice .page_horizonal_line {
@@ -712,41 +742,6 @@ h1 {
   }
 }
 
-/*
-
-
-
-.description_text {
-
-}
-
-.page_vertical_line {   
-    border: none;
-    background-color: #9e998d;
-    height: 100%;
-    width: 3px;
-    margin-right: 25px;
-    margin-left: 25px;
-}
-
-.page_horizonal_line {
-    display: none;
-    border: none;
-    background-color: #9e998d;
-    height: 3px;
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
-.wide_logo {
-    width: 30vw; 
-}
-
-.high_logo {
-    height: 25vw; 
-}
-*/
 .branding_title {
   color: #111013;
   text-decoration: none;
@@ -756,26 +751,25 @@ h1 {
 @media all and (max-width: 415px) {
   .branding_title {
     font-size: 25px;
-    margin-top: 10vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .branding_title {
     font-size: 25px;
-    margin-top: 10vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 @media all and (min-width: 769px) {
   .branding_title {
     font-size: 3vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     text-align: center;
+    margin-bottom: 5vw;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -790,12 +784,12 @@ h1 {
 }
 @media all and (max-width: 415px) {
   .branding_image {
-    margin-top: 10vw;
+    margin-top: 5vh;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
   .branding_image {
-    margin-top: 10vw;
+    margin-top: 5vh;
   }
 }
 @media all and (min-width: 769px) {

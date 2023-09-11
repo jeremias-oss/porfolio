@@ -5,17 +5,20 @@
     text-decoration: none;
     font-family: museo-sans;
     font-weight: 700;    
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;    
         @media all and (max-width:415px) {
         font-size: 25px;
+        margin-bottom: 3vh;
         }
         @media all and (min-width:416px) and (max-width:768px) {
-        font-size: 25px;     
+        font-size: 25px;
+        margin-bottom: 5vh;         
         }
         @media all and (min-width:769px){
         font-size: 3vw;
+        margin-bottom: 6vh;
         }    
 }
 
@@ -29,11 +32,11 @@
     width: 25vw;
         @media all and (max-width:415px) {
         width: 80vw;
-        margin-top: 10vw;
+        margin-bottom: 10vw;
         }
         @media all and (min-width:416px) and (max-width:768px) {
         width: 80vw;
-        margin-top: 10vw;      
+        margin-bottom: 10vw;      
         }
         @media all and (min-width:769px){
         width: 25vw;
