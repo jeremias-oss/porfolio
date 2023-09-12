@@ -125,29 +125,48 @@ h1 {
 .index_body .top_container .CV_button_container:hover {
   background-color: #fffb07;
 }
-.index_body .text_general, .index_body .index_slice .text_general_dark {
+.index_body .second_line_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index_body .second_line_container .language_container {
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media all and (max-width: 415px) {
+  .index_body .second_line_container .language_container {
+    width: 20vw;
+  }
+}
+.index_body .second_line_container .language_container .text_general_active {
+  color: #fffb07;
+}
+.index_body .text_general, .index_body .index_slice .text_general_dark, .index_body .second_line_container .language_container .text_general_active {
   font-family: museo-sans;
   font-weight: 500;
 }
 @media all and (max-width: 415px) {
-  .index_body .text_general, .index_body .index_slice .text_general_dark {
+  .index_body .text_general, .index_body .index_slice .text_general_dark, .index_body .second_line_container .language_container .text_general_active {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
-  .index_body .text_general, .index_body .index_slice .text_general_dark {
+  .index_body .text_general, .index_body .index_slice .text_general_dark, .index_body .second_line_container .language_container .text_general_active {
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
 }
 @media all and (min-width: 769px) {
-  .index_body .text_general, .index_body .index_slice .text_general_dark {
+  .index_body .text_general, .index_body .index_slice .text_general_dark, .index_body .second_line_container .language_container .text_general_active {
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
 }
-.index_body .text_general a, .index_body .index_slice .text_general_dark a {
+.index_body .text_general a, .index_body .index_slice .text_general_dark a, .index_body .second_line_container .language_container .text_general_active a {
   color: #F5EFE0;
 }
 .index_body .contact {
@@ -809,7 +828,6 @@ footer {
   font-family: museo-sans;
 }
 footer .footer_title {
-  font-size: 50px;
   color: #414141;
   font-weight: 900;
   letter-spacing: 2px;
@@ -817,6 +835,39 @@ footer .footer_title {
   align-items: center;
   justify-content: center;
   width: 50%;
+}
+@media all and (min-width: 769px) {
+  footer .footer_title {
+    font-size: 50px;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  footer .footer_title {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 415px) {
+  footer .footer_title {
+    font-size: 20px;
+  }
+}
+footer .footer_links {
+  color: #F5EFE0;
+}
+@media all and (min-width: 769px) {
+  footer .footer_links {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  footer .footer_links {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 415px) {
+  footer .footer_links {
+    font-size: 12px;
+  }
 }
 footer .footer_vertical_line {
   border: none;
@@ -839,10 +890,6 @@ footer .footer_links_spacer {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-}
-footer .footer_links {
-  color: #F5EFE0;
-  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

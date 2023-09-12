@@ -119,6 +119,29 @@
             }
     }
     
+    .second_line_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .language_container {            
+            width: 15vw;
+            @media all and (max-width:415px) {                
+                width: 20vw;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+                             
+            .text_general_active {
+                @extend .text_general;
+                color: $highlight;
+            }
+
+        }
+    }
+    
+
     .text_general {        
         font-family: museo-sans;
         font-weight: 500;
