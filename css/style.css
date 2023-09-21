@@ -804,9 +804,10 @@ h1 {
 }
 @media all and (max-width: 415px) {
   .branding_title {
-    font-size: 25px;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-size: 23px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media all and (min-width: 416px) and (max-width: 768px) {
@@ -849,6 +850,34 @@ h1 {
 @media all and (min-width: 769px) {
   .branding_image {
     margin-bottom: 5vh;
+  }
+}
+
+.branding_line_container {
+  display: flex;
+  justify-content: center;
+}
+.branding_line_container .branding_horizontal_line {
+  border: none;
+  background-color: #111013;
+  height: 2px;
+  width: 80%;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+@media all and (min-width: 769px) {
+  .branding_line_container .branding_horizontal_line {
+    display: none;
+  }
+}
+@media all and (max-width: 415px) {
+  .branding_line_container .branding_horizontal_line {
+    margin-top: 5vh;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  .branding_line_container .branding_horizontal_line {
+    margin-top: 6vh;
   }
 }
 

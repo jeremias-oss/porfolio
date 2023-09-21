@@ -4,9 +4,10 @@
     font-family: museo-sans;
     font-weight: 700;
     @media all and (max-width:415px) {
-        font-size: 25px;
-        padding-left: 5%;
-        padding-right: 5%;         
+        font-size: 23px;
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;         
     }
     @media all and (min-width:416px) and (max-width:768px){
         font-size: 25px;          
@@ -42,3 +43,25 @@
         margin-bottom: 5vh;  
     }    
 }
+
+.branding_line_container {    
+    display: flex;
+    justify-content: center;
+    .branding_horizontal_line {                    
+        @media all and (min-width:769px){
+            display: none;
+        }
+        @media all and (max-width:415px) {
+            margin-top: 5vh;
+        }
+        @media all and (min-width:416px) and (max-width:768px){
+            margin-top: 6vh;
+        }
+        border: none;
+        background-color: $dark;
+        height: 2px;
+        width: 80%;        
+        margin-bottom: 15px;
+        opacity: 1;  
+    }
+    }
