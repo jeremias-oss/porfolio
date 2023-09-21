@@ -478,6 +478,41 @@ h1 {
   }
 }
 
+@media all and (max-width: 415px) {
+  .lower_section {
+    margin-top: 3vh;
+  }
+}
+@media all and (min-width: 416px) and (max-width: 768px) {
+  .lower_section {
+    margin-top: 5vh;
+  }
+}
+@media all and (min-width: 769px) {
+  .lower_section {
+    margin-top: 6vh;
+  }
+}
+
+.line_container {
+  display: flex;
+  justify-content: center;
+}
+.line_container .illustration_horizontal_line {
+  border: none;
+  background-color: #111013;
+  height: 2px;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  opacity: 1;
+}
+@media all and (min-width: 769px) {
+  .line_container .illustration_horizontal_line {
+    display: none;
+  }
+}
+
 .small_page_slice_cv {
   display: flex;
   flex-direction: column;

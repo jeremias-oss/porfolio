@@ -55,3 +55,31 @@
     }    
 }
 
+.lower_section {
+    @media all and (max-width:415px) {        
+        margin-top: 3vh;
+        }
+        @media all and (min-width:416px) and (max-width:768px) {        
+        margin-top: 5vh;         
+        }
+        @media all and (min-width:769px){        
+        margin-top: 6vh;
+        }    
+}
+
+.line_container {
+    display: flex;
+    justify-content: center;
+    .illustration_horizontal_line {            
+        @media all and (min-width:769px){
+            display: none;
+        }
+        border: none;
+        background-color: $dark;
+        height: 2px;
+        width: 80%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        opacity: 1;  
+    }
+    }
