@@ -28,7 +28,7 @@
 .branding_container {    
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;      
+    flex-wrap: wrap;          
 }
 
 .branding_image {
@@ -40,7 +40,17 @@
         margin-top: 5vh;
     }
     @media all and (min-width:769px) {
-        margin-bottom: 5vh;  
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 1.5%;        
+        max-width: 40%;  
+    }    
+}
+
+.branding_image_long {
+    width: 80vw;    
+    @media all and (min-width:769px) {
+        margin-bottom: 4vh;              
     }    
 }
 

@@ -325,13 +325,13 @@ h1 {
   color: #F5EFE0;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
 }
 .navbar_small .container-fluid .active {
   color: #fffb07 !important;
   text-decoration: none;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .navbar_general {
@@ -849,7 +849,19 @@ h1 {
 }
 @media all and (min-width: 769px) {
   .branding_image {
-    margin-bottom: 5vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+    max-width: 40%;
+  }
+}
+
+.branding_image_long {
+  width: 80vw;
+}
+@media all and (min-width: 769px) {
+  .branding_image_long {
+    margin-bottom: 4vh;
   }
 }
 
